@@ -200,12 +200,12 @@ def main(player):
     if player == "no":
         x_turn = True
         o_turn = False
-        p1.loadPolicy('policy_p1')
+        p1.loadPolicy('models/policy_p1')
 
     else:
         x_turn = False
         o_turn = True
-        p1.loadPolicy('policy_p2')
+        p1.loadPolicy('models/policy_p2')
 
     game_array = initialize_grid()
 

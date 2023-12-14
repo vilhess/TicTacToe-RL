@@ -191,7 +191,7 @@ class Player:
         self.states = []
 
     def savePolicy(self):
-        fw = open('policy_' + str(self.name), 'wb')
+        fw = open('models/policy_' + str(self.name), 'wb')
         pickle.dump(self.states_value, fw)
         fw.close()
 
@@ -210,5 +210,5 @@ if __name__ == '__main__':
         st = State(p1, p2)
         print('training')
         st.play(NUM_ITER)
-        # p1.savePolicy()
-        # p2.savePolicy()
+        p1.savePolicy()
+        p2.savePolicy()
