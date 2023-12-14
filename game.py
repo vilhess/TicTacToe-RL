@@ -226,6 +226,6 @@ def main(player):
 
 if __name__ == '__main__':
     # player = input("Start ? (yes or no): ")
-    player = 'no'
+    player = 'yes'
     while True:
         main(player)

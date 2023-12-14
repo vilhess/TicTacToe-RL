@@ -6,7 +6,7 @@ TRAIN = True
 BOARD_ROWS = 3
 BOARD_COLS = 3
 
-NUM_ITER = 5000
+NUM_ITER = 50000
 
 
 class State:
@@ -87,7 +87,7 @@ class State:
             self.p2.feedReward(1)
         else:
             self.p1.feedReward(0.2)
-            self.p2.feedReward(0.5)
+            self.p2.feedReward(0.8)
 
     # board reset
     def reset(self):
